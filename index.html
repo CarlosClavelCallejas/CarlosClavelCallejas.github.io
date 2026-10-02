@@ -310,76 +310,123 @@
         /* CONTACT */
 
         #contact {
-            background-color: #0f172a;
-            color: white;
-            text-align: center;
-        }
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 80px 8%;
+}
 
-        #contact .section-title {
-            color: white;
-        }
+#contact .section-title {
+    color: white;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
 
-        #contact p {
-            color: #cbd5e1;
-            max-width: 650px;
-            margin: 0 auto 25px;
-        }
+.contact-message {
+    color: #cbd5e1;
+    max-width: 700px;
+    margin: 0 auto 35px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
 
-        /* FOOTER */
 
-        footer {
-            background-color: #020617;
-            color: #94a3b8;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-        }
+/* CONTACT LINKS */
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-links a {
+    display: inline-block;
+    background-color: #1e293b;
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: #2563eb;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+FOOTER
+======================================== */
+
+footer {
+    background-color: #020617;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
 
         /* MOBILE */
 
         @media (max-width: 768px) {
 
-            nav {
-                flex-direction: column;
-                gap: 12px;
-            }
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
 
-            nav ul {
-                gap: 15px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-            .hero-container {
-                flex-direction: column;
-                text-align: center;
-            }
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
-            .profile-picture {
-                width: 180px;
-                height: 180px;
-            }
+    .profile-picture {
+        width: 180px;
+        height: 180px;
+    }
 
-            .hero-text h1 {
-                font-size: 2.7rem;
-            }
+    .hero-text h1 {
+        font-size: 2.7rem;
+    }
 
-            .project-images {
-                grid-template-columns: 1fr;
-            }
+    .project-images {
+        grid-template-columns: 1fr;
+    }
 
-            .project-images img {
-                height: auto;
-            }
+    .project-images img {
+        height: auto;
+    }
 
-            .project-card h3 {
-                font-size: 1.6rem;
-            }
+    .project-card h3 {
+        font-size: 1.6rem;
+    }
 
-            section {
-                padding: 60px 5%;
-            }
-        }
+    section {
+        padding: 60px 5%;
+    }
+
+    /* CONTACT MOBILE */
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-links a {
+        width: 100%;
+        max-width: 350px;
+    }
+}
     </style>
 </head>
 
@@ -698,31 +745,68 @@
 
     <section id="contact">
 
-        <div class="section-container">
+    <div class="section-container">
 
-            <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">Contact</h2>
 
-            <p>
-                Thank you for visiting my portfolio. I am interested in
-                professional opportunities where I can apply my education,
-                military experience, leadership, analytical skills, and
-                commitment to continuous professional development.
-            </p>
+        <p class="contact-message">
+            Thank you for visiting my portfolio. I am interested in
+            professional opportunities where I can apply my education,
+            military experience, leadership, analytical skills, and
+            commitment to continuous professional development.
+        </p>
+
+
+        <!-- CONTACT LINKS -->
+
+        <div class="contact-links">
+
+            <!-- EMAIL -->
+
+            <a href="mailto:carlosclavel2019@gmail.com">
+                ✉ carlosclavel2019@gmail.com
+            </a>
+
+
+            <!-- LINKEDIN -->
+
+            <a
+                href="https://www.linkedin.com/in/carlos-clavel"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn ↗
+            </a>
+
+
+            <!-- RESUME -->
+
+            <a
+                href="Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View Resume ↗
+            </a>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- FOOTER -->
+<!-- ========================================
+FOOTER
+======================================== -->
 
-    <footer>
+<footer>
 
-        <p>
-            © 2026 Carlos Clavel | Professional Portfolio
-        </p>
+    <p>
+        © 2026 Carlos Clavel | Professional Portfolio
+    </p>
 
-    </footer>
+</footer>
 
 </body>
 </html>
